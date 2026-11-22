@@ -1,0 +1,20 @@
+{
+  "project_slug": "megafon-family-devices",
+  "title": "Связь для близких и собственных устройств",
+  "current_stage": "08-decision-revision",
+  "completed_stages": [
+    "01-task-intake",
+    "02-research-sources",
+    "03-synthetic-interview",
+    "05-data-economics",
+    "06-options-redteam",
+    "07-strategy-packager"
+  ],
+  "next_action": "Await Gate Q1 sign-off or ingest additional field interview transcripts",
+  "open_gaps": [
+    "GAP-04",
+    "GAP-05"
+  ],
+  "updated_at": "2026-11-20T18:17:50Z",
+  "last_summary": "Strategy v1 linted; Q1 revision demo v2 and ADR ledger logged"
+}

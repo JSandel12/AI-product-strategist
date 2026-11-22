@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "product-factory-strategist": {
+      "command": "uv",
+      "args": ["run", "--directory", ".", "python", "-m", "tools.mcp_server"]
+    }
+  }
+}

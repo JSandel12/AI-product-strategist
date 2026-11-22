@@ -1,0 +1,29 @@
+sources:
+  - id: SRC-01
+    title: "Бриф на разработку стратегии продукта: Связь для близких и собственных устройств"
+    type: "pdf"
+    location: "projects/megafon-family-devices/inputs/primer_brifa.pdf"
+    extracted_text: "projects/megafon-family-devices/inputs/primer_brifa_extracted.md"
+    pages: "1-11"
+    trust_tier: "project_input"
+    added_at: "2026-11-20"
+  - id: SRC-02
+    title: "Воспроизводимые расчёты экономики, воронки и А/Б-выборки (Python CLI)"
+    type: "computed_json"
+    location: "projects/megafon-family-devices/research/calculations.json"
+    script: "tools/calculators/economics.py"
+    trust_tier: "verified_computation"
+    added_at: "2026-11-20"
+  - id: SRC-03
+    title: "Протоколы модельных (ИИ) интервью по трём ролям"
+    type: "synthetic_interview"
+    location: "projects/megafon-family-devices/research/synthetic_interviews.md"
+    trust_tier: "synthetic_hypothesis_ONLY"
+    warning: "Не доказывает спрос и распространённость проблемы; используется только для генерации гипотез и формулировок."
+    added_at: "2026-11-20"
+  - id: SRC-04
+    title: "Новые данные аудита Q1 (демонстрация этапа пересмотра): задержка биллинга и поток событий"
+    type: "simulated_q1_telemetry"
+    location: "projects/megafon-family-devices/inputs/q1_telemetry_update.md"
+    trust_tier: "project_input"
+    added_at: "2026-11-20"

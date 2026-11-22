@@ -1,0 +1,9 @@
+# Реестр проверенных источников проекта
+sources: []
+# Пример записи:
+# - id: SRC-01
+#   title: "Бриф проекта"
+#   type: "pdf"
+#   location: "projects/<slug>/inputs/brief.pdf"
+#   trust_tier: "project_input"
+#   added_at: "YYYY-MM-DD"

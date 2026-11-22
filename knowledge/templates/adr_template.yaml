@@ -1,0 +1,18 @@
+# Реестр решений после запуска (Architecture & Product Decision Ledger)
+decisions:
+  - id: ADR-001
+    title: "Краткое название решения"
+    status: "proposed" # proposed | accepted | needs_revision | superseded
+    owner: "Руководитель направления"
+    decided_at: "YYYY-MM-DD"
+    rationale_sources: ["SRC-01"]
+    assumptions:
+      - id: ASM-001
+        statement: "Ключевое допущение"
+        threshold_to_flip: "Значение, при котором решение пересматривается"
+    kpis:
+      - metric: "Название метрики"
+        target: "Целевое значение"
+        observation_window: "Срок"
+    revision_triggers:
+      - "Конкретное событие или новое сведение для пересмотра"

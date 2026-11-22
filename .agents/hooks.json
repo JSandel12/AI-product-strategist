@@ -1,0 +1,43 @@
+{
+  "strategist-lifecycle": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "uv run --directory .. python -m tools.hooks.hook_runner SessionStart",
+        "timeout": 10
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "run_command|write_file|edit_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --directory .. python -m tools.hooks.hook_runner PreToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --directory .. python -m tools.hooks.hook_runner PostToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "uv run --directory .. python -m tools.hooks.hook_runner Stop",
+        "timeout": 10
+      }
+    ]
+  }
+}

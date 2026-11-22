@@ -1,0 +1,11 @@
+---
+description: Core operating rules for Product Factory Strategist in Cursor
+globs:
+alwaysApply: true
+---
+Follow `AGENTS.md` strictly:
+1. Keep instructions, `knowledge/`, `projects/<slug>/inputs|research|decisions|outputs`, and `state/` strictly separated.
+2. Tag every substantive claim (`[ФАКТ | SRC-xx]`, `[ГИПОТЕЗА]`, `[ДОПУЩЕНИЕ]`, `[ПРОГНОЗ]`, `[СИНТЕТИЧЕСКАЯ ГИПОТЕЗА]`, `[НЕДОСТАТОК ДАННЫХ]`).
+3. Never do financial, funnel, or A/B math mentally — call `uv run python -m tools.strategist_cli calc ...` or MCP `strategist_calc_*`.
+4. Always start or resume by reading `projects/<slug>/state/session_state.json` via `strategist_status`.
+5. Run `uv run python -m tools.strategist_cli lint <file>` before finalizing any strategy output.

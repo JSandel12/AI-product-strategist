@@ -1,0 +1,79 @@
+{
+  "project": "megafon-family-devices",
+  "generated_by": "tools/calculators/economics.py",
+  "ab_sample_size_mde_3pp_fast_recruitment": {
+    "baseline_rate": 0.12,
+    "target_rate": 0.09,
+    "absolute_diff_pp": -3.0,
+    "relative_change_pct": -25.0,
+    "alpha": 0.05,
+    "power": 0.8,
+    "n_per_arm": 1638,
+    "total_sample_size": 3276,
+    "feasibility": {
+      "weekly_eligible_units": 400.0,
+      "recruitment_weeks": 8.19,
+      "observation_window_days": 7,
+      "total_calendar_weeks": 9.19,
+      "fits_in_single_quarter_12w": true
+    }
+  },
+  "ab_sample_size_mde_3pp_slow_recruitment": {
+    "baseline_rate": 0.12,
+    "target_rate": 0.09,
+    "n_per_arm": 1638,
+    "total_sample_size": 3276,
+    "feasibility": {
+      "weekly_eligible_units": 200.0,
+      "recruitment_weeks": 16.38,
+      "observation_window_days": 7,
+      "total_calendar_weeks": 17.38,
+      "fits_in_single_quarter_12w": false
+    }
+  },
+  "unit_economics_target_case": {
+    "baseline_profit_mln_rub": 279.0,
+    "target_profit_mln_rub": 285.0,
+    "profit_per_paid_month_rub": 500.0,
+    "direct_cost_per_month_rub": 25.0,
+    "extra_support_or_sms_rub": 400000.0,
+    "dev_capex_rub": 2200000.0,
+    "net_margin_per_paid_month_rub": 475.0,
+    "incremental_paid_months": 14000,
+    "total_incremental_profit_rub": 6250000.0,
+    "projected_annual_profit_mln_rub": 285.25,
+    "meets_annual_target": true,
+    "required_paid_months_to_close_gap": 13474,
+    "max_dev_budget_for_1yr_payback_rub": 6250000.0,
+    "estimated_payback_months_at_dev_capex": 4.22
+  },
+  "unit_economics_conservative_case": {
+    "incremental_paid_months": 8000,
+    "net_margin_per_paid_month_rub": 475.0,
+    "extra_support_or_sms_rub": 400000.0,
+    "total_incremental_profit_rub": 3400000.0,
+    "projected_annual_profit_mln_rub": 282.4,
+    "meets_annual_target": false,
+    "remaining_gap_rub": 2600000.0,
+    "estimated_payback_months_at_dev_capex": 7.76
+  },
+  "family_funnel_base_case": {
+    "start_connected": 6500,
+    "new_connected": 6400,
+    "churned": 1700,
+    "end_connected": 11200,
+    "active_rate": 0.66,
+    "active_end": 7392,
+    "addressable_market": 100000,
+    "addressable_penetration_pct": 11.2,
+    "incremental_vs_baseline_connections": 3200,
+    "incremental_cac_rub": 375.0
+  },
+  "sensitivity_grid_net_margin_475": [
+    {"affected_units": 4000, "avg_extra_paid_months": 1.2, "incremental_paid_months": 4800, "net_incremental_profit_mln_rub": 1.88, "closes_6m_gap": false},
+    {"affected_units": 6000, "avg_extra_paid_months": 1.5, "incremental_paid_months": 9000, "net_incremental_profit_mln_rub": 3.875, "closes_6m_gap": false},
+    {"affected_units": 8000, "avg_extra_paid_months": 1.5, "incremental_paid_months": 12000, "net_incremental_profit_mln_rub": 5.3, "closes_6m_gap": false},
+    {"affected_units": 8000, "avg_extra_paid_months": 2.0, "incremental_paid_months": 16000, "net_incremental_profit_mln_rub": 7.2, "closes_6m_gap": true},
+    {"affected_units": 10000, "avg_extra_paid_months": 1.5, "incremental_paid_months": 15000, "net_incremental_profit_mln_rub": 6.725, "closes_6m_gap": true}
+  ]
+}
