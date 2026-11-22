@@ -1,4 +1,4 @@
 timestamp,stage,model,tokens_in,tokens_out,duration_sec,cost_rub,notes
-2026-11-20T18:17:49Z,02-research-sources,gemini-2.5-flash,9500,2100,18.4,1.8,PDF extraction & gap ledger
+2026-11-20T18:17:49Z,02-research-sources,gemini-4-hydrogen,9500,2100,18.4,1.8,PDF extraction & gap ledger
 2026-11-20T18:17:49Z,05-data-economics,python-deterministic,0,0,0.4,0.0,"Exact unit economics, A/B power, funnel"
-2026-11-20T18:17:49Z,07-strategy-packager,gemini-2.5-pro,18000,6200,46.2,14.2,5-part strategy & red-team synthesis
+2026-11-20T18:17:49Z,07-strategy-packager,gemini-4-neon,18000,6200,46.2,14.2,5-part strategy & red-team synthesis

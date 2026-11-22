@@ -122,12 +122,12 @@ def classify_and_route(task_text: str, has_images_or_video: bool = False) -> dic
         "fast_tier + deterministic_python": "Use local KB BM25 index without external web search when offline.",
     }
     model_class_map = {
-        "deterministic_python + fast_tier": "Python stdlib + Fast/Economical LLM (e.g., Flash / Haiku / GPT-4o-mini)",
-        "fast_tier": "Fast/Economical LLM (e.g., Flash / Haiku / GPT-4o-mini)",
+        "deterministic_python + fast_tier": "Python stdlib + Fast/Economical LLM (e.g., Gemini 4 Hydrogen / Flash / Haiku)",
+        "fast_tier": "Fast/Economical LLM (e.g., Gemini 4 Hydrogen / Flash / Haiku)",
         "multimodal_reasoning": "Multimodal Vision-Capable LLM (only when images/audio/video attached)",
-        "reasoning_tier": "Deep Reasoning LLM (e.g., Gemini Pro / Opus / Sonnet / o3-mini)",
-        "reasoning_tier + deterministic_python": "Deep Reasoning LLM + Python Validators",
-        "fast_tier + deterministic_python": "Fast/Economical LLM + Local Python KB Index",
+        "reasoning_tier": "Deep Reasoning LLM (e.g., Gemini 4 Neon / Pro / Sonnet)",
+        "reasoning_tier + deterministic_python": "Deep Reasoning LLM (Gemini 4 Neon) + Python Validators",
+        "fast_tier + deterministic_python": "Fast/Economical LLM (Gemini 4 Hydrogen) + Local Python KB Index",
     }
 
     decision = RouteDecision(
