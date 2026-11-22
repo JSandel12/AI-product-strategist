@@ -88,5 +88,4 @@ uv run python -m tools.strategist_cli benchmark
 - **Итоговая стратегия (v1):** [strategy_v1.md](projects/megafon-family-devices/outputs/strategy_v1.md)
 - **Демонстрация пересмотра при новых данных (v2):** [strategy_v2_revision_demo.md](projects/megafon-family-devices/outputs/strategy_v2_revision_demo.md)
 - **Реестр решений (ADR):** [adr_ledger.yaml](projects/megafon-family-devices/decisions/adr_ledger.yaml)
-- **Подробное описание системы (архитектура, промпты, расходы, ограничения):** [docs/description.md](docs/description.md)
-- **Сценарий видеозаписи (<10 минут):** [docs/video_script.md](docs/video_script.md)
+- **Подробное описание системы (архитектура, промпты, расходы, ограничения):** [docs/description.md](docs/description.md) ([PDF](docs/description.pdf))
